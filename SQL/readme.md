@@ -47,8 +47,8 @@
 9. **Types of Indexes**
 
 - `Unique Index` :
-- `Clustered Index` : Defines the physical order of records of a db table, and perform data searching based on the key values. A table can have only one clustered index
-- `Non-clustered Index` : Keeps the order of the table records that don't match the physical order of the actual data on the disk. A table can have multiple non-clustered indexes
+- `Clustered Index` : _Defines the physical order of records_ of a db table, and perform data searching based on the key values. A table can have only one clustered index
+- `Non-clustered Index` : _Keeps the order of the table records that don't match the physical order of the actual data_ on the disk. A table can have multiple non-clustered indexes
 
 10. **Schema** : Collection of db structural elements such as tables, stored procedures, indexes, functions and triggers
 
@@ -79,6 +79,25 @@
 
 16. **Case Manipulation Functions** : `UCASE`, `LCASE`, `INITCAP`
 
+17. **Character Manipulation Functions** : `CONCAT`, `SUBSTR` etc.
+
+18. **SELECT query : Appearance Order** : SELECT - FROM - JOIN - ON - WHERE - GROUP BY - HAVING - ORDER BY - LIMIT
+
+19. **SELECT query : Interpreter Execution Order** : FROM - JOIN - ON - WHERE - GROUP BY - HAVING - SELECT - ORDER BY - LIMIT
+
+20. **View** : Virtual table containing a subset of data retrieved from one or more database tables (or other views), gets invalid if the original table is deleted
+
+21. **BOOLEAN** : TRUE, FALSE or NULL
+
+22. **DELETE vs TRUNCATE** : _DELETE_ is reversible, works slower than truncate and is specified using WHERE clause where as _TRUNCATE_ is irreversible and works faster and cannot be applied on a foreign key
+
+23. **HAVING vs WHERE** : _HAVING_ works on grouped data whereas _WHERE_ works on each row individually. ORDER : `WHERE - GROUP BY - HAVING`
+
+24. **nth highest value** : `OFFSET` Clause
+
+25. **Selecting Random Rows from a Table** : SELECT \* FROM table_name ORDER BY RAND() LIMIT 5;
+
 ## Additional Resources
 
 - [datacamp.com](https://www.datacamp.com/blog/top-sql-interview-questions-and-answers-for-beginners-and-intermediate-practitioners)
+- [Basics](https://chatgpt.com/share/678cfbcc-a45c-8007-8a11-84825981dd2f)
